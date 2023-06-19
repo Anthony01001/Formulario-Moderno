@@ -9,5 +9,44 @@
 </head>
 <body>
     
+<header>
+    <div id="especial1"></div>
+    <div class="pai">
+           <h2>Sign In</h2>
+ <div>
+<form action="php">
+    <input onclick="Usuario()" type="text" name="usuario" id="usuario" checked>
+    <span onclick="Usuario()">Usuario</span>
+    <input onclick="Senha()" type="password" name="senha" id="senha" checked>
+    <span onclick="Senha()">Password</span>
+    
+    <nav>
+    <a href="#">Forgot Password?</a>
+    <a href="#">Sigup</a>
+    </nav>
+    <p>Login</p>
+</form>
+ </div>
+    </div>
+ 
+</header>
+    <script>
+        function Usuario(){
+        let span1 =document.getElementsByTagName(`span`)[0]
+        let input1= document.getElementsByTagName(`input`)[0]
+        span1.style.fontSize = `small`;
+        span1.classList.add(`efeitofont`)
+        input1.style.backgroundImage = `linear-gradient(to bottom, transparent, #0084ff)`
+    }
+    function Senha(){
+        let span2 =document.getElementsByTagName(`span`)[1]
+        let input2= document.getElementsByTagName(`input`)[1]
+       
+        span2.style.fontSize = `small`;
+        span2.classList.add(`efeitofont`)
+        input2.style.backgroundImage = `linear-gradient(to bottom, transparent, #0084ff)`
+
+    }
+    </script>
 </body>
 </html>
