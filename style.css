@@ -1,16 +1,36 @@
+@media (max-width:400px){
+header{
+    margin-left: -100px;
+}
+    .pai{
+    margin-right: 120px;
+    
+}
+}
+@media (min-width:900px){
+    body{
+        
+       background-image: url(HD\ wallpaper_\ universe\ and\ planet\ wallpaper\,\ landscape\,\ science\ fiction\,\ fantasy\ art.jfif);
+       background-size: cover; 
+        background-attachment: fixed;
+    }
+    
+}
 *{padding: 0;
     margin: 0;}
-    body{position: relative;
-        z-index: 9999;
+    body{
+        position: relative;
         color: white;
-        background-color: black;
-        display: flex;
+       background-image: url(pexels-pixabay-41162\ \(1\).jpg);
+       background-size: cover; 
+        background-attachment: fixed;
+       opacity: 1;
+       display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     font-family: Arial, Helvetica, sans-serif;}
         header{
-            background-image: linear-gradient(180deg , rgba(0, 0, 0, 0.26) 60%,transparent 63%, rgba(255, 255, 255, 0.2));
             width: 200px;
         height: 200px;
       padding: 20px;
@@ -19,10 +39,16 @@
     }.pai > h2{
         text-align: center;
     margin-bottom: 20px;}
-    .pai{
-        display: flex;
-        flex-direction: column;
-   }input{display: inline-block;
+   
+.pai{opacity: 1;
+background-image: linear-gradient(to top , white ,transparent , transparent, black);
+padding: 20px;
+border-radius: 15px;
+position: absolute;
+display: flex;
+flex-direction: column;
+  }
+   input{display: inline-block;
         position: relative;
     letter-spacing: 3px;
     color: white;
@@ -38,7 +64,7 @@
 }
     span{cursor: pointer;
         display: inline-block;
-        color: darkgray;
+        color: white;
         font-size: medium;
         transform: translate(10px,-20px);
     }
@@ -46,38 +72,25 @@
     transform: translate(0px,-35px);
     transition: 0.1s;
     
-    } nav > a{display: inline-block;
+    }
+     nav > a{display: inline-block;
         font-size: small;
         margin: 0px 10px;
         transform: translatey(-10px);
     } a{
         text-decoration: none;
-    }a:nth-of-type(1){color: darkgray; 
+    }a:nth-of-type(1){color: darkgray;
+        text-shadow: 2px 5px 10px black; 
     cursor:pointer;}
+    a:hover{color:white;}
         a:nth-of-type(2){color: white;
         cursor: pointer;}
         p{margin: 10px 4px;
             text-align: center;
         width: 70px;
-        color: black;
+        color: white;
         border-radius: 5px;
         padding: 5px;
-        background-color: white;}
-        #especial1{
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 300px;
-            height: 250px;
-            transform-origin: bottom;
-            background-image: linear-gradient(to bottom ,#0084ff , transparent);
-        animation: mover 2s linear infinite;}
-        @keyframes mover{
-            0%{
-                transform:rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-            
-        }
+        background-color: black;}
+        p:hover{cursor: pointer;}
+      
